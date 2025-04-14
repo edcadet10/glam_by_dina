@@ -1,4 +1,4 @@
-# Premium Content Creator Website
+# Glam by Dina Website
 
 This repository contains a fully responsive website built for a professional content creator based on the premium design specification. The website features a distinctive pink-champagne aesthetic that creates a consistent, recognizable brand while maintaining professional credibility.
 
