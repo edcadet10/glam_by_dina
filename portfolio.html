@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Premium Content Creator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/call-to-action.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Content Creator</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html" class="cta-button">Contact</a></li>
+                </ul>
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Portfolio Hero -->
+        <section class="portfolio-hero" style="background-image: url('images/glam_by_dina3.jpg'); background-size: cover; background-position: center; position: relative;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(255, 182, 193, 0.85), rgba(51, 51, 51, 0.85));"></div>
+            <div class="container" style="position: relative; z-index: 1;">
+                <h1>Content Portfolio</h1>
+                <p>Explore my diverse collection of premium beauty and lifestyle content across various formats and platforms</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Filters -->
+        <section class="portfolio-filters">
+            <div class="container">
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="video">Video</button>
+                    <button class="filter-btn" data-filter="photography">Photography</button>
+                    <button class="filter-btn" data-filter="social">Social Media</button>
+                    <button class="filter-btn" data-filter="collab">Brand Collaborations</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid -->
+        <section class="portfolio-grid">
+            <div class="container">
+                <div class="masonry-grid">
+                    <!-- Video Content -->
+                    <div class="portfolio-item video" data-category="video">
+                        <div class="item-image">
+                            <img src="images/glam_by_dina7.jpg" alt="Beauty Product Campaign">
+                            <div class="item-overlay">
+                                <div class="play-button"></div>
+                                <div class="item-info">
+                                    <h3>Beauty Product Campaign</h3>
+                                    <div class="item-meta">
+                                        <span class="views">245K views</span>
+                                        <span class="platform">YouTube</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item video" data-category="video">
+                        <div class="item-image">
+                            <img src="images/glam_by_dina6.jpg" alt="Makeup Tutorial Series">
+                            <div class="item-overlay">
+                                <div class="play-button"></div>
+                                <div class="item-info">
+                                    <h3>Makeup Tutorial Series</h3>
+                                    <div class="item-meta">
+                                        <span class="views">532K views</span>
+                                        <span class="platform">YouTube</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photography Content -->
+                    <div class="portfolio-item photography" data-category="photography">
+                        <div class="item-image">
+                            <img src="images/glam_by_dina3.jpg" alt="Professional Portrait Series">
+                            <div class="item-overlay">
+                                <div class="item-info">
+                                    <h3>Professional Portrait Series</h3>
+                                    <div class="item-meta">
+                                        <span class="platform">Professional Photography</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item photography" data-category="photography">
+                        <div class="item-image tall">
+                            <img src="images/glam_by_dina1.jpg" alt="Beauty Product Shoot">
+                            <div class="item-overlay">
+                                <div class="item-info">
+                                    <h3>Beauty Product Shoot</h3>
+                                    <div class="item-meta">
+                                        <span class="platform">Commercial Photography</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Content -->
+                    <div class="portfolio-item social" data-category="social">
+                        <div class="item-image">
+                            <img src="images/glam_by_dina4.jpg" alt="Makeup Tutorial Series">
+                            <div class="item-overlay">
+                                <div class="item-info">
+                                    <h3>Makeup Tutorial Series</h3>
+                                    <div class="item-meta">
+                                        <span class="likes">38.5K likes</span>
+                                        <span class="platform">Instagram</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item social" data-category="social">
+                        <div class="item-image">
+                            <img src="images/glam_by_dina8.jpg" alt="Quick Beauty Tips">
+                            <div class="item-overlay">
+                                <div class="item-info">
+                                    <h3>Quick Beauty Tips</h3>
+                                    <div class="item-meta">
+                                        <span class="likes">2.3M likes</span>
+                                        <span class="platform">TikTok</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Brand Collaboration Content -->
+                    <div class="portfolio-item collab" data-category="collab">
+                        <div class="item-image wide">
+                            <img src="images/glam_by_dina5.jpg" alt="Luxury Cosmetics Partnership">
+                            <div class="item-overlay">
+                                <div class="item-info">
+                                    <h3>Luxury Cosmetics Partnership</h3>
+                                    <div class="item-meta">
+                                        <span class="platform">Multi-platform Campaign</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item collab" data-category="collab">
+                        <div class="item-image">
+                            <img src="images/glam_by_dina2.jpg" alt="Sustainable Beauty Brand">
+                            <div class="item-overlay">
+                                <div class="item-info">
+                                    <h3>Sustainable Beauty Brand</h3>
+                                    <div class="item-meta">
+                                        <span class="platform">Instagram Partnership</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- More Portfolio Items -->
+                    <div class="portfolio-item video" data-category="video">
+                        <div class="item-image">
+                            <img src="images/portfolio-9.jpg" alt="Travel Vlog Series">
+                            <div class="item-overlay">
+                                <div class="play-button"></div>
+                                <div class="item-info">
+                                    <h3>Travel Vlog Series</h3>
+                                    <div class="item-meta">
+                                        <span class="views">185K views</span>
+                                        <span class="platform">YouTube</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item photography" data-category="photography">
+                        <div class="item-image tall">
+                            <img src="images/portfolio-10.jpg" alt="Architectural Study">
+                            <div class="item-overlay">
+                                <div class="item-info">
+                                    <h3>Architectural Study</h3>
+                                    <div class="item-meta">
+                                        <span class="platform">Professional Photography</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item social" data-category="social">
+                        <div class="item-image">
+                            <img src="images/portfolio-11.jpg" alt="Daily Lifestyle Series">
+                            <div class="item-overlay">
+                                <div class="item-info">
+                                    <h3>Daily Lifestyle Series</h3>
+                                    <div class="item-meta">
+                                        <span class="likes">450K likes</span>
+                                        <span class="platform">Instagram Stories</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item collab" data-category="collab">
+                        <div class="item-image">
+                            <img src="images/portfolio-12.jpg" alt="Fitness Brand Promotion">
+                            <div class="item-overlay">
+                                <div class="item-info">
+                                    <h3>Fitness Brand Promotion</h3>
+                                    <div class="item-meta">
+                                        <span class="platform">YouTube & Instagram</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Collaborations -->
+        <section class="featured-collaborations">
+            <div class="container">
+                <h2>Brand Partnerships</h2>
+                <p>Proud to have created content for these amazing brands</p>
+                
+                <div class="brand-logos">
+                    <div class="brand-logo">
+                        <img src="images/brand-1.svg" alt="Luxury Fashion Brand">
+                    </div>
+                    <div class="brand-logo">
+                        <img src="images/brand-2.svg" alt="Tech Giant">
+                    </div>
+                    <div class="brand-logo">
+                        <img src="images/brand-3.svg" alt="Beauty Company">
+                    </div>
+                    <div class="brand-logo">
+                        <img src="images/brand-4.svg" alt="Travel Agency">
+                    </div>
+                    <div class="brand-logo">
+                        <img src="images/brand-5.svg" alt="Food & Beverage Brand">
+                    </div>
+                </div>
+                
+                <div class="collaboration-metrics">
+                    <div class="metric-card">
+                        <h3 class="metric-value">43%</h3>
+                        <p class="metric-label">Average Engagement Increase</p>
+                    </div>
+                    <div class="metric-card">
+                        <h3 class="metric-value">3.2x</h3>
+                        <p class="metric-label">ROI for Brand Partners</p>
+                    </div>
+                    <div class="metric-card">
+                        <h3 class="metric-value">87%</h3>
+                        <p class="metric-label">Partnership Renewal Rate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="call-to-action">
+            <div class="container">
+                <h2>Ready to Showcase Your Brand?</h2>
+                <p>Let's collaborate on content that elevates your brand and resonates with your audience</p>
+                <a href="contact.html" class="cta-button pulse">Start a Project</a>
+            </div>
+            <div class="floating-content">
+                <!-- Floating content snippets will be added via JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand">
+                    <div class="footer-logo">Content Creator</div>
+                    <p>Creating premium digital content that captures attention and drives engagement</p>
+                </div>
+                <div class="footer-col navigation">
+                    <h4>Site Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col social">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram" class="instagram"></a>
+                        <a href="#" aria-label="YouTube" class="youtube"></a>
+                        <a href="#" aria-label="TikTok" class="tiktok"></a>
+                        <a href="#" aria-label="Twitter" class="twitter"></a>
+                        <a href="#" aria-label="LinkedIn" class="linkedin"></a>
+                    </div>
+                </div>
+                <div class="footer-col contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:hello@contentcreator.com">hello@contentcreator.com</a></li>
+                        <li><a href="contact.html">Collaboration Inquiries</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">© 2025 Glam by Dina. All rights reserved.</div>
+                <div class="footer-settings">
+                    <button class="animation-toggle" aria-label="Toggle animations">
+                        <span class="toggle-label">Animations:</span>
+                        <span class="toggle-status">On</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>

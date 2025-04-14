@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Facebook Icon</title>
+    <g id="Facebook-Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Background" fill="#FFE9ED" cx="40" cy="40" r="40"></circle>
+        <g id="Facebook-Logo" transform="translate(26.000000, 16.000000)" fill-rule="nonzero">
+            <path d="M28,8.7 L28,16 L22.5,16 L22.5,24 L28,24 L28,48 L37.8,48 L37.8,24 L44.5,24 C44.5,24 45.1,20.2 45.4,16 L37.9,16 L37.9,10.5 C37.9,9.5 39.2,8.2 40.5,8.2 L45.5,8.2 L45.5,0 L38.4,0 C27.6,0 28,7.6 28,8.7 Z" id="Facebook-F" fill="#FFB6C1"></path>
+            <path d="M24,16 L24,8.7 C24,7.6 23.6,0 12.8,0 L5.5,0 L5.5,8.2 L10.5,8.2 C11.8,8.2 13.1,9.5 13.1,10.5 L13.1,16 L5.6,16 C5.9,20.2 6.5,24 6.5,24 L13.2,24 L13.2,48 L23,48 L23,24 L28.5,24 L28.5,16 L24,16 Z" id="Facebook-F-Shadow" fill="#FFC300" opacity="0.5"></path>
+        </g>
+    </g>
+</svg>

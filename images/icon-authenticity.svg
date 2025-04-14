@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Authenticity Icon</title>
+    <g id="Authenticity-Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Background" fill="#FFE9ED" cx="30" cy="30" r="30"></circle>
+        <g id="Fingerprint" transform="translate(15.000000, 10.000000)" stroke-linecap="round">
+            <path d="M10,15 C10,12.2 12.2,10 15,10 C17.8,10 20,12.2 20,15 L20,25" id="Inner-Line" stroke="#FFB6C1" stroke-width="3"></path>
+            <path d="M5,15 C5,9.5 9.5,5 15,5 C20.5,5 25,9.5 25,15 L25,25" id="Middle-Line" stroke="#FFB6C1" stroke-width="3"></path>
+            <path d="M0,15 C0,6.7 6.7,0 15,0 C23.3,0 30,6.7 30,15 L30,25" id="Outer-Line" stroke="#FFB6C1" stroke-width="3"></path>
+            <path d="M15,15 L15,40" id="Vertical-Line" stroke="#FFC300" stroke-width="3"></path>
+            <path d="M15,20 L20,20" id="Cross-Line-1" stroke="#333333" stroke-width="2"></path>
+            <path d="M15,30 L10,30" id="Cross-Line-2" stroke="#333333" stroke-width="2"></path>
+        </g>
+    </g>
+</svg>

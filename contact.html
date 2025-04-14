@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Premium Content Creator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Content Creator</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Contact Hero -->
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Let's Collaborate</h1>
+                <p>Reach out to discuss your project and discover how we can create content that resonates with your audience</p>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Get in Touch</h2>
+                        <p>I'm excited to hear about your project. Fill out the form to start the conversation or use the direct contact options below.</p>
+                        
+                        <div class="direct-contact">
+                            <div class="contact-method">
+                                <div class="method-icon email"></div>
+                                <div class="method-details">
+                                    <h3>Email</h3>
+                                    <p><a href="mailto:hello@contentcreator.com">hello@contentcreator.com</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon response"></div>
+                                <div class="method-details">
+                                    <h3>Response Time</h3>
+                                    <p>Within 24-48 hours</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon location"></div>
+                                <div class="method-details">
+                                    <h3>Located In</h3>
+                                    <p>New Jersey (Serving New York and surrounding areas)</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-connect">
+                            <h3>Connect on Social</h3>
+                            <div class="social-links">
+                                <a href="#" aria-label="Instagram" class="instagram"></a>
+                                <a href="#" aria-label="YouTube" class="youtube"></a>
+                                <a href="#" aria-label="TikTok" class="tiktok"></a>
+                                <a href="#" aria-label="Twitter" class="twitter"></a>
+                                <a href="#" aria-label="LinkedIn" class="linkedin"></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <div class="form-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <div class="progress-steps">
+                                <div class="progress-step active" data-step="1">1</div>
+                                <div class="progress-step" data-step="2">2</div>
+                                <div class="progress-step" data-step="3">3</div>
+                            </div>
+                        </div>
+                        
+                        <form id="contact-form" class="multi-step-form">
+                            <!-- Step 1: Basic Info -->
+                            <div class="form-step active" data-step="1">
+                                <h3>Basic Information</h3>
+                                
+                                <div class="form-group">
+                                    <label for="name">Your Name *</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="company">Company/Brand Name</label>
+                                    <input type="text" id="company" name="company">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="service">Service of Interest *</label>
+                                    <select id="service" name="service" required>
+                                        <option value="" disabled selected>Select a service</option>
+                                        <option value="video">Video Production</option>
+                                        <option value="photography">Photography</option>
+                                        <option value="social">Social Media Strategy</option>
+                                        <option value="brand">Brand Collaboration</option>
+                                        <option value="multiple">Multiple Services</option>
+                                        <option value="other">Other/Not Sure Yet</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-navigation">
+                                    <button type="button" class="next-btn" data-next="2">Next Step</button>
+                                </div>
+                            </div>
+                            
+                            <!-- Step 2: Project Details -->
+                            <div class="form-step" data-step="2">
+                                <h3>Project Details</h3>
+                                
+                                <div class="form-group">
+                                    <label for="project-type">Project Type</label>
+                                    <select id="project-type" name="project-type">
+                                        <option value="" disabled selected>Select a project type</option>
+                                        <option value="one-time">One-time Project</option>
+                                        <option value="ongoing">Ongoing Collaboration</option>
+                                        <option value="campaign">Campaign (Multiple Deliverables)</option>
+                                        <option value="consulting">Consulting/Strategy Only</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="budget">Estimated Budget Range</label>
+                                    <select id="budget" name="budget">
+                                        <option value="" disabled selected>Select a budget range</option>
+                                        <option value="under-5k">Under $5,000</option>
+                                        <option value="5k-10k">$5,000 - $10,000</option>
+                                        <option value="10k-25k">$10,000 - $25,000</option>
+                                        <option value="25k-plus">$25,000+</option>
+                                        <option value="not-sure">Not sure yet</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="timeline">Desired Timeline</label>
+                                    <select id="timeline" name="timeline">
+                                        <option value="" disabled selected>Select a timeline</option>
+                                        <option value="asap">As soon as possible</option>
+                                        <option value="1-month">Within 1 month</option>
+                                        <option value="1-3-months">1-3 months</option>
+                                        <option value="3-plus-months">More than 3 months</option>
+                                        <option value="flexible">Flexible</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="project-description">Project Description *</label>
+                                    <textarea id="project-description" name="project-description" rows="5" required></textarea>
+                                </div>
+                                
+                                <div class="form-navigation">
+                                    <button type="button" class="back-btn" data-back="1">Previous</button>
+                                    <button type="button" class="next-btn" data-next="3">Next Step</button>
+                                </div>
+                            </div>
+                            
+                            <!-- Step 3: Additional Info -->
+                            <div class="form-step" data-step="3">
+                                <h3>Final Details</h3>
+                                
+                                <div class="form-group">
+                                    <label for="reference">How did you hear about me?</label>
+                                    <select id="reference" name="reference">
+                                        <option value="" disabled selected>Select an option</option>
+                                        <option value="social">Social Media</option>
+                                        <option value="search">Search Engine</option>
+                                        <option value="referral">Personal Referral</option>
+                                        <option value="previous-work">Previous Work</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="availability">Best time for initial consultation</label>
+                                    <select id="availability" name="availability">
+                                        <option value="" disabled selected>Select an option</option>
+                                        <option value="morning">Mornings (9am-12pm PST)</option>
+                                        <option value="afternoon">Afternoons (12pm-5pm PST)</option>
+                                        <option value="evening">Evenings (5pm-8pm PST)</option>
+                                        <option value="flexible">Flexible/No preference</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="additional-info">Additional Information</label>
+                                    <textarea id="additional-info" name="additional-info" rows="4"></textarea>
+                                </div>
+                                
+                                <div class="form-group checkbox-group">
+                                    <input type="checkbox" id="newsletter" name="newsletter" checked>
+                                    <label for="newsletter">Subscribe to my newsletter for creative insights and special offers</label>
+                                </div>
+                                
+                                <div class="form-navigation">
+                                    <button type="button" class="back-btn" data-back="2">Previous</button>
+                                    <button type="submit" class="submit-btn">Submit Inquiry</button>
+                                </div>
+                            </div>
+                            
+                            <!-- Form Success Message -->
+                            <div class="form-success">
+                                <div class="success-icon"></div>
+                                <h3>Thank You for Reaching Out!</h3>
+                                <p>Your inquiry has been successfully submitted. I'll review your project details and get back to you within 24-48 hours.</p>
+                                <p>In the meantime, feel free to explore my <a href="portfolio.html">portfolio</a> for more examples of my work.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Availability Calendar -->
+        <section class="availability-section">
+            <div class="container">
+                <h2>Upcoming Availability</h2>
+                <p>Check my calendar for the next available project slots. Book a discovery call to secure your spot.</p>
+                
+                <div class="availability-calendar">
+                    <div class="month-navigation">
+                        <button class="month-nav prev" aria-label="Previous month">←</button>
+                        <h3 class="current-month">April 2025</h3>
+                        <button class="month-nav next" aria-label="Next month">→</button>
+                    </div>
+                    
+                    <div class="calendar-grid">
+                        <div class="calendar-header">
+                            <div class="weekday">Sun</div>
+                            <div class="weekday">Mon</div>
+                            <div class="weekday">Tue</div>
+                            <div class="weekday">Wed</div>
+                            <div class="weekday">Thu</div>
+                            <div class="weekday">Fri</div>
+                            <div class="weekday">Sat</div>
+                        </div>
+                        
+                        <div class="calendar-days">
+                            <!-- Calendar days will be generated via JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="availability-legend">
+                        <div class="legend-item">
+                            <div class="legend-color available"></div>
+                            <div class="legend-label">Available for Booking</div>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color limited"></div>
+                            <div class="legend-label">Limited Availability</div>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color booked"></div>
+                            <div class="legend-label">Fully Booked</div>
+                        </div>
+                    </div>
+                    
+                    <div class="calendar-note">
+                        <p>* Calendar shows project start availability. Select a date to request a discovery call.</p>
+                    </div>
+                </div>
+                
+                <div class="availability-action">
+                    <a href="#contact-form" class="cta-button">Book Discovery Call</a>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand">
+                    <div class="footer-logo">Content Creator</div>
+                    <p>Creating premium digital content that captures attention and drives engagement</p>
+                </div>
+                <div class="footer-col navigation">
+                    <h4>Site Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col social">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram" class="instagram"></a>
+                        <a href="#" aria-label="YouTube" class="youtube"></a>
+                        <a href="#" aria-label="TikTok" class="tiktok"></a>
+                        <a href="#" aria-label="Twitter" class="twitter"></a>
+                        <a href="#" aria-label="LinkedIn" class="linkedin"></a>
+                    </div>
+                </div>
+                <div class="footer-col contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:hello@contentcreator.com">hello@contentcreator.com</a></li>
+                        <li><a href="contact.html">Collaboration Inquiries</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">© 2025 Glam by Dina. All rights reserved.</div>
+                <div class="footer-settings">
+                    <button class="animation-toggle" aria-label="Toggle animations">
+                        <span class="toggle-label">Animations:</span>
+                        <span class="toggle-status">On</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

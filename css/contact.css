@@ -1,0 +1,600 @@
+/* 
+ * Contact Page Styles
+ */
+
+/* Contact Hero */
+.contact-hero {
+    background: linear-gradient(135deg, var(--pink-dark), var(--pink-250));
+    color: var(--white);
+    text-align: center;
+    padding: var(--space-xxxl) 0 var(--space-xl);
+    margin-top: 80px; /* Account for fixed header */
+}
+
+.contact-hero h1 {
+    margin-bottom: var(--space-md);
+}
+
+.contact-hero p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    padding: var(--space-xxxl) 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--space-xl);
+    align-items: start;
+}
+
+/* Contact Info */
+.contact-info {
+    background-color: var(--light-gray);
+    border-radius: var(--border-radius-md);
+    padding: var(--space-xl);
+    position: sticky;
+    top: 100px;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+}
+
+.direct-contact {
+    margin-top: var(--space-lg);
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--space-md);
+}
+
+.method-icon {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: var(--space-sm);
+}
+
+.method-icon.email {
+    background-image: url('../images/icon-email.svg');
+}
+
+.method-icon.response {
+    background-image: url('../images/icon-time.svg');
+}
+
+.method-icon.location {
+    background-image: url('../images/icon-location.svg');
+}
+
+.method-details h3 {
+    font-size: 1.125rem;
+    margin: 0 0 var(--space-xs);
+}
+
+.method-details p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+.social-connect {
+    margin-top: var(--space-xl);
+}
+
+.social-connect h3 {
+    font-size: 1.125rem;
+    margin-bottom: var(--space-sm);
+}
+
+.social-links {
+    display: flex;
+    gap: var(--space-sm);
+}
+
+/* Form Styles */
+.contact-form-container {
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    padding: var(--space-xl);
+    box-shadow: var(--shadow-level1);
+}
+
+.form-progress {
+    margin-bottom: var(--space-lg);
+}
+
+.progress-bar {
+    height: 4px;
+    background-color: var(--light-gray);
+    border-radius: 2px;
+    margin-bottom: var(--space-md);
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--pink-1000), var(--gold));
+    width: 33.333%; /* Initial width for step 1 */
+    transition: width var(--transition-medium) var(--ease-standard);
+}
+
+.progress-steps {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.progress-step {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--light-gray);
+    color: var(--medium-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    position: relative;
+    transition: all var(--transition-medium) var(--ease-standard);
+}
+
+.progress-step.active {
+    background-color: var(--pink-1000);
+    color: var(--white);
+}
+
+.progress-step.completed {
+    background-color: var(--gold);
+    color: var(--white);
+}
+
+.multi-step-form .form-step {
+    display: none;
+}
+
+.multi-step-form .form-step.active {
+    display: block;
+    animation: fadeIn var(--transition-medium) var(--ease-standard);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.form-step h3 {
+    margin-top: 0;
+    margin-bottom: var(--space-lg);
+    color: var(--pink-1000);
+}
+
+.form-group {
+    margin-bottom: var(--space-md);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--space-xs);
+    font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: var(--space-sm);
+    border: 1px solid var(--medium-gray);
+    border-radius: var(--border-radius-sm);
+    font-family: var(--font-secondary);
+    transition: border-color var(--transition-medium) var(--ease-standard);
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--pink-1000);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 182, 193, 0.3);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-xs);
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-top: 3px;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.form-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--space-lg);
+}
+
+.back-btn {
+    background: none;
+    border: 1px solid var(--medium-gray);
+    color: var(--medium-gray);
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    font-size: 0.875rem;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: all var(--transition-medium) var(--ease-standard);
+}
+
+.back-btn:hover {
+    border-color: var(--dark-gray);
+    color: var(--dark-gray);
+}
+
+.next-btn, .submit-btn {
+    background-color: var(--pink-1000);
+    color: var(--white);
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    font-size: 0.875rem;
+    border: none;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: all var(--transition-medium) var(--ease-standard);
+}
+
+.next-btn:hover, .submit-btn:hover {
+    background-color: var(--pink-750);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-level1);
+}
+
+.next-btn:active, .submit-btn:active {
+    background-color: var(--pink-dark);
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* When no back button, next button should be centered */
+.form-step[data-step="1"] .form-navigation {
+    justify-content: flex-end;
+}
+
+.form-success {
+    display: none;
+    text-align: center;
+    padding: var(--space-xl) 0;
+    animation: fadeIn var(--transition-medium) var(--ease-standard);
+}
+
+.form-success.active {
+    display: block;
+}
+
+.success-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--space-md);
+    background-image: url('../images/icon-success.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Availability Calendar */
+.availability-section {
+    background-color: var(--light-gray);
+    padding: var(--space-xxxl) 0;
+    text-align: center;
+}
+
+.availability-section h2 {
+    margin-bottom: var(--space-sm);
+}
+
+.availability-section > .container > p {
+    max-width: 600px;
+    margin: 0 auto var(--space-xl);
+}
+
+.availability-calendar {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-level1);
+}
+
+.month-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-md);
+}
+
+.month-nav {
+    background: none;
+    border: none;
+    color: var(--dark-gray);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color var(--transition-medium) var(--ease-standard);
+}
+
+.month-nav:hover {
+    color: var(--pink-1000);
+}
+
+.current-month {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.calendar-grid {
+    margin-bottom: var(--space-md);
+}
+
+.calendar-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: var(--space-sm);
+}
+
+.weekday {
+    padding: var(--space-xs);
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+}
+
+.calendar-day {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: var(--border-radius-sm);
+    transition: all var(--transition-medium) var(--ease-standard);
+    position: relative;
+}
+
+.calendar-day.outside-month {
+    color: var(--medium-gray);
+    opacity: 0.5;
+}
+
+.calendar-day.today {
+    font-weight: 700;
+    border: 2px solid var(--pink-1000);
+}
+
+.calendar-day.available {
+    background-color: rgba(255, 182, 193, 0.2);
+}
+
+.calendar-day.available:hover {
+    background-color: rgba(255, 182, 193, 0.4);
+    transform: scale(1.1);
+    box-shadow: var(--shadow-level1);
+    z-index: 1;
+}
+
+.calendar-day.limited {
+    background-color: rgba(255, 195, 0, 0.2);
+}
+
+.calendar-day.limited:hover {
+    background-color: rgba(255, 195, 0, 0.4);
+    transform: scale(1.1);
+    box-shadow: var(--shadow-level1);
+    z-index: 1;
+}
+
+.calendar-day.booked {
+    background-color: rgba(102, 102, 102, 0.2);
+    cursor: not-allowed;
+}
+
+.calendar-day.selected {
+    background-color: var(--pink-1000);
+    color: var(--white);
+    transform: scale(1.1);
+    box-shadow: var(--shadow-level1);
+    z-index: 1;
+}
+
+.availability-legend {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+    margin: var(--space-md) 0;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: 0.875rem;
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.legend-color.available {
+    background-color: rgba(255, 182, 193, 0.5);
+}
+
+.legend-color.limited {
+    background-color: rgba(255, 195, 0, 0.5);
+}
+
+.legend-color.booked {
+    background-color: rgba(102, 102, 102, 0.5);
+}
+
+.calendar-note {
+    font-size: 0.875rem;
+    color: var(--medium-gray);
+}
+
+.availability-action {
+    margin-top: var(--space-lg);
+}
+
+/* Quick Connect */
+.quick-connect {
+    padding: var(--space-xxxl) 0;
+    text-align: center;
+}
+
+.quick-connect h2 {
+    margin-bottom: var(--space-sm);
+}
+
+.quick-connect > .container > p {
+    max-width: 600px;
+    margin: 0 auto var(--space-xl);
+}
+
+.connect-options {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-xl);
+    flex-wrap: wrap;
+}
+
+.connect-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-level1);
+    width: 200px;
+    transition: all var(--transition-medium) var(--ease-standard);
+    border: none;
+}
+
+.connect-option:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-level2);
+    border: none;
+}
+
+.connect-icon {
+    width: 64px;
+    height: 64px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: var(--space-md);
+}
+
+.connect-icon.instagram {
+    background-image: url('../images/icon-instagram-color.svg');
+}
+
+.connect-icon.email-template {
+    background-image: url('../images/icon-email-template.svg');
+}
+
+.connect-icon.linkedin {
+    background-image: url('../images/icon-linkedin-color.svg');
+}
+
+.connect-label {
+    font-weight: 600;
+    color: var(--dark-gray);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1279px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    
+    .contact-info {
+        position: static;
+        padding: var(--space-lg);
+    }
+    
+    .connect-options {
+        gap: var(--space-md);
+    }
+    
+    .connect-option {
+        width: 180px;
+        padding: var(--space-md);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contact-hero {
+        margin-top: 60px;
+        padding: var(--space-xl) 0 var(--space-lg);
+    }
+    
+    .contact-form-container,
+    .availability-calendar {
+        padding: var(--space-md);
+    }
+    
+    .form-navigation {
+        flex-direction: column-reverse;
+        gap: var(--space-sm);
+    }
+    
+    .back-btn, .next-btn, .submit-btn {
+        width: 100%;
+    }
+    
+    .connect-options {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-md);
+    }
+    
+    .connect-option {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .weekday {
+        font-size: 0.75rem;
+        padding: var(--space-xs) 0;
+    }
+    
+    .legend-item {
+        font-size: 0.75rem;
+    }
+}

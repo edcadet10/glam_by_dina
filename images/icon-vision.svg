@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Vision Icon</title>
+    <g id="Vision-Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Background" fill="#FFE9ED" cx="30" cy="30" r="30"></circle>
+        <g id="Eye" transform="translate(11.000000, 17.000000)" fill-rule="nonzero">
+            <path d="M19,0 C31.9,0 38,13 38,13 C38,13 31.9,26 19,26 C6.1,26 0,13 0,13 C0,13 6.1,0 19,0 Z" id="Eye-Shape" stroke="#FFB6C1" stroke-width="2"></path>
+            <circle id="Pupil" fill="#FFC300" cx="19" cy="13" r="6"></circle>
+            <circle id="Highlight" fill="#FFFFFF" cx="16.5" cy="10.5" r="2.5"></circle>
+            <path d="M8,4 C10.5,6.5 11.5,10 11,14" id="Eyelash-1" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M19,0 C21,1.5 22,3.5 22,6" id="Eyelash-2" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M30,4 C27.5,6.5 26.5,10 27,14" id="Eyelash-3" stroke="#333333" stroke-width="2" stroke-linecap="round" transform="translate(28.500000, 9.000000) scale(-1, 1) translate(-28.500000, -9.000000) "></path>
+        </g>
+    </g>
+</svg>

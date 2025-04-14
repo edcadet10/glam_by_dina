@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Mission Icon</title>
+    <g id="Mission-Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Background" fill="#FFE9ED" cx="30" cy="30" r="30"></circle>
+        <g id="Target" transform="translate(13.000000, 13.000000)" fill-rule="nonzero">
+            <circle id="Outer-Circle" stroke="#FFB6C1" stroke-width="2" cx="17" cy="17" r="16"></circle>
+            <circle id="Middle-Circle" stroke="#FFB6C1" stroke-width="2" cx="17" cy="17" r="10"></circle>
+            <circle id="Inner-Circle" fill="#FFC300" cx="17" cy="17" r="4"></circle>
+            <path d="M33,17 L35,17 C35.5522847,17 36,16.5522847 36,16 C36,15.4477153 35.5522847,15 35,15 L33,15 L33,17 Z M17,1 L17,0 C16.4477153,0 16,0.44771525 16,1 C16,1.55228475 16.4477153,2 17,2 L17,1 Z M17,33 L17,34 C17.5522847,34 18,33.5522847 18,33 C18,32.4477153 17.5522847,32 17,32 L17,33 Z M1,17 L-1.66533454e-16,17 C0.55228475,17 1,16.5522847 1,16 C1,15.4477153 0.55228475,15 -3.33066907e-16,15 L1,17 Z" id="Crosshairs" stroke="#333333" stroke-width="2"></path>
+            <path d="M17,17 L26,5" id="Arrow" stroke="#FFB6C1" stroke-width="2" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

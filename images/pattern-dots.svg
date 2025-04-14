@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Dots Pattern</title>
+    <g id="Dots-Pattern" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Dot" fill="#FFB6C1" cx="2" cy="2" r="2"></circle>
+        <circle id="Dot" fill="#FFB6C1" cx="10" cy="2" r="2"></circle>
+        <circle id="Dot" fill="#FFB6C1" cx="18" cy="2" r="2"></circle>
+        <circle id="Dot" fill="#FFB6C1" cx="2" cy="10" r="2"></circle>
+        <circle id="Dot" fill="#FFB6C1" cx="10" cy="10" r="2"></circle>
+        <circle id="Dot" fill="#FFB6C1" cx="18" cy="10" r="2"></circle>
+        <circle id="Dot" fill="#FFB6C1" cx="2" cy="18" r="2"></circle>
+        <circle id="Dot" fill="#FFB6C1" cx="10" cy="18" r="2"></circle>
+        <circle id="Dot" fill="#FFB6C1" cx="18" cy="18" r="2"></circle>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Quality Icon</title>
+    <g id="Quality-Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Background" fill="#FFE9ED" cx="30" cy="30" r="30"></circle>
+        <g id="Quality" transform="translate(15.000000, 15.000000)">
+            <polygon id="Star" stroke="#FFB6C1" stroke-width="3" fill-rule="nonzero" points="15 0 19.6 9.5 30 11 22.5 18.4 24.3 29 15 24 5.7 29 7.5 18.4 0 11 10.4 9.5"></polygon>
+            <circle id="Circle" stroke="#FFC300" stroke-width="2" cx="15" cy="15" r="15"></circle>
+            <path d="M10.5,15.5 L13.5,18.5 L19.5,12.5" id="Checkmark" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

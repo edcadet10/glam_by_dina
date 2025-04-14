@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Creativity Icon</title>
+    <g id="Creativity-Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Background" fill="#FFE9ED" cx="30" cy="30" r="30"></circle>
+        <g id="Creativity" transform="translate(15.000000, 10.000000)">
+            <path d="M15,0 C23.3,0 30,6.7 30,15 C30,20.6 26.7,25.4 21.9,28 L20,28 L20,34 C20,35.1 19.1,36 18,36 L12,36 C10.9,36 10,35.1 10,34 L10,28 L8.1,28 C3.3,25.5 0,20.6 0,15 C0,6.7 6.7,0 15,0 Z" id="Lightbulb" stroke="#FFB6C1" stroke-width="3" fill-rule="nonzero"></path>
+            <line x1="10" y1="36" x2="20" y2="36" id="Bottom-Line" stroke="#333333" stroke-width="2" stroke-linecap="round"></line>
+            <line x1="12" y1="40" x2="18" y2="40" id="Lower-Line" stroke="#333333" stroke-width="2" stroke-linecap="round"></line>
+            <path d="M15,8 L15,15" id="Filament-Line-1" stroke="#FFC300" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M10,10 L15,15" id="Filament-Line-2" stroke="#FFC300" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M20,10 L15,15" id="Filament-Line-3" stroke="#FFC300" stroke-width="2" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

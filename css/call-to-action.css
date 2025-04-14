@@ -1,0 +1,129 @@
+/* 
+ * Enhanced Call to Action Styles
+ */
+
+/* Call to Action */
+.call-to-action {
+    text-align: center;
+    background: linear-gradient(145deg, var(--pink-dark), var(--pink-250));
+    color: var(--dark-gray);
+    position: relative;
+    overflow: hidden;
+    padding: var(--space-xxxl) 0;
+    min-height: 500px;
+}
+
+.call-to-action .container {
+    position: relative;
+    z-index: 2;
+}
+
+.call-to-action h2 {
+    color: var(--white);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(--space-md);
+    font-size: 3.5rem;
+}
+
+.call-to-action p {
+    color: var(--white);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--space-xl);
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.floating-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* Make the CTA button more prominent */
+.call-to-action .cta-button {
+    background-color: var(--white);
+    color: var(--pink-1000);
+    font-size: 1.1rem;
+    padding: var(--space-md) var(--space-xl);
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(0);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.call-to-action .cta-button:hover {
+    background-color: transparent;
+    color: var(--white);
+    border-color: var(--white);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.call-to-action .cta-button.pulse {
+    animation: ctaPulse 3s infinite;
+}
+
+@keyframes ctaPulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+}
+
+/* Falling Photos Styling */
+.floating-item {
+    transition: transform 0.3s ease;
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+}
+
+.floating-item:hover {
+    z-index: 10 !important;
+}
+
+.falling-photo {
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease;
+    transform-origin: center center;
+    cursor: pointer;
+}
+
+/* Control the density of falling photos */
+@media (prefers-reduced-motion: reduce) {
+    .falling-photo {
+        animation-duration: 20s !important;
+    }
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .call-to-action h2 {
+        font-size: 2.5rem;
+    }
+    
+    .call-to-action p {
+        font-size: 1rem;
+    }
+    
+    .call-to-action .cta-button {
+        font-size: 1rem;
+        padding: var(--space-sm) var(--space-lg);
+    }
+}

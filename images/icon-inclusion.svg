@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Inclusion Icon</title>
+    <g id="Inclusion-Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Background" fill="#FFE9ED" cx="30" cy="30" r="30"></circle>
+        <g id="Inclusion" transform="translate(10.000000, 12.000000)">
+            <circle id="Person-1" fill="#FFB6C1" cx="7" cy="7" r="7"></circle>
+            <circle id="Person-2" fill="#FFC300" cx="20" cy="12" r="7"></circle>
+            <circle id="Person-3" fill="#FFB6C1" cx="33" cy="7" r="7"></circle>
+            <path d="M40,19 L40,21 C40,29.8 32.8,37 24,37 L16,37 C7.2,37 0,29.8 0,21 L0,19" id="Curve" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M20,12 L20,37" id="Vertical-Line" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>
